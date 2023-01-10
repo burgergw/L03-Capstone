@@ -7,9 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "react-scripts build",
+    "build": "npm run build:frontend && npm run build:backend",
     "server": "node server.js",
-    "client": "npm start --prefix frontend"
+    "client": "npm start --prefix frontend",
+    "build:client": "npm run build --prefix frontend"
+
   },
   "author": "GW Burger",
   "license": "ISC",
