@@ -1,0 +1,82 @@
+.item {
+    
+    font-size: medium;
+    top: 50%;
+    padding-right: 20px;
+    
+
+}
+.quantity {
+    
+    font-size: small;
+    padding-right: 20px;
+    font-size: medium;
+
+    
+
+}
+.price {
+    
+    font-size: small;
+    font-size: medium;
+
+    
+
+}
+.edit {
+    
+    position: absolute;
+    right: 25px;
+    border-radius: 10px;
+    
+    
+    height: 80%;
+    top: 10%;
+}
+.stock-item {
+   border: solid 1px;
+   border-radius: 10px;
+   position: relative;
+   display: flex;
+   height: 45px;
+   margin-left: 10%;
+   margin-top: 7px;
+   
+   
+
+
+}
+
+
+
+/* .item {
+    font-size: 18px;
+    color: blue;
+  }
+  
+  .quantity {
+    font-size: 14px;
+    color: green;
+  }
+  
+  .price {
+    font-size: 16px;
+    color: red;
+  }
+  .stock-item {
+    padding: 20px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+  }
+  .edit {
+    background-color: lightblue;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .edit:hover {
+    background-color: blue;
+    color: white;
+  } */

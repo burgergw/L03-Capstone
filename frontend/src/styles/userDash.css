@@ -1,0 +1,18 @@
+table, th {
+    border: 1px solid;
+    
+    
+  }
+  td {
+    border: 1px solid;
+
+  }
+  table {
+    left: 20%;
+    
+    margin-top: 50px;
+    
+    
+    position: relative;
+    width: 73%;
+  }
