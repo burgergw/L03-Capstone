@@ -11,9 +11,10 @@
     "start:frontend": "cd frontend && npm start",
     "build": "npm run build:frontend && npm run build:server",
     "build:frontend": "cd frontend && npm run build",
-    "build:server": "babel server --out-dir dist",
+    
     "server": "nodemon server.js",
     "client": "npm start --prefix frontend",
+    "build:server": "babel server.js --out-dir dist",
     "deploy": "vercel"
   },
   "author": "GW Burger",
@@ -33,6 +34,7 @@
     "web-vitals": "3.1.1"
   },
   "devDependencies": {
+    "@babel/cli": "7.20.7",
     "concurrently": "7.6.0",
     "jest-cli": "29.3.1",
     "mocha": "10.2.0",
