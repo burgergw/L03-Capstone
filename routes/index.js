@@ -16,7 +16,7 @@ const db = mongoose.connection;
 //Database error handling
 db.on('error', console.log)
 //Request to test connection
-router.get('/', (req, res) => {
+router.get('/api', (req, res) => {
     res.send('ok');
 })
 //Post request to register a new user
