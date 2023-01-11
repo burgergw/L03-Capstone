@@ -10,7 +10,6 @@
     "start:server": "node server.js",
     "start:frontend": "cd frontend && npm start",
     "build": "npm run build:frontend && npm run build:server",
-
     "build:frontend": "cd frontend && npm run build",
     "build:server": "npm run build",
     "server": "nodemon server.js",
@@ -28,6 +27,7 @@
     "jsonwebtoken": "9.0.0",
     "mongoose": "6.8.1",
     "react-dom": "18.2.0",
+    "react-router-dom": "6.6.2",
     "react-scripts": "5.0.1",
     "react-test-renderer": "18.2.0"
   },
