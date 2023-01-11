@@ -15,11 +15,11 @@ app.use(bodyParser.json());
 //Using Helmet to secure the backend of the app
 app.use(helmet());
 //Using the routes directory with the '/' endpoint
-app.use('/api', routes);
-app.use(express.static(path.join(__dirname, "frontend/build")));
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
-});
+app.use('/', routes);
+// app.use(express.static(path.join(__dirname, "frontend/build")));
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
+// });
 
 //Setting port variable and listening on port 5150
 const port = 5150;

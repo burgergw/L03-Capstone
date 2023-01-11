@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 //Using Helmet to secure the backend of the app
 app.use(helmet());
 //Using the routes directory with the '/' endpoint
-app.use('/api', routes);
+app.use('/', routes);
 
 
 app.use(express.static(path.join(__dirname, "frontend/build")));
