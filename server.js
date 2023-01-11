@@ -4,6 +4,7 @@ const routes = require('./routes');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const helmet = require('helmet');
+const path = require('path');
 //Creating App object by calling express function
 const app = express();
 //Adding middleware
@@ -15,6 +16,18 @@ app.use(bodyParser.json());
 app.use(helmet());
 //Using the routes directory with the '/' endpoint
 app.use('/', routes);
+
+
+app.use(express.static(path.join(__dirname, "frontend/build")));
+
+app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'))
+})
+
+
+
+
+
 //Setting port variable and listening on port 5150
 const port = 5150;
 app.listen(port, () => console.log(
