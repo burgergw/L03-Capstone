@@ -14,7 +14,7 @@
     
     "server": "nodemon server.js",
     "client": "npm start --prefix frontend",
-    "build:server": "babel server.js --out-dir dist",
+    "build:server": "babel server.js --out-dir build",
     "deploy": "vercel"
   },
   "author": "GW Burger",
