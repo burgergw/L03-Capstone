@@ -1,6 +1,6 @@
 //Including required packages and middleware
 const express = require('express');
-const routes = require('../routes/index');
+const routes = require('./routes/index.js');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const helmet = require('helmet');
