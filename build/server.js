@@ -1,6 +1,6 @@
 //Including required packages and middleware
 const express = require('express');
-const routes = require('./routes');
+const routes = require('../routes/index');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const helmet = require('helmet');
@@ -16,10 +16,10 @@ app.use(bodyParser.json());
 app.use(helmet());
 //Using the routes directory with the '/' endpoint
 app.use('/', routes);
-// app.use(express.static(path.join(__dirname, "frontend/build")));
-// app.get("*", (req, res) => {
-//   res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
-// });
+app.use(express.static(path.join(__dirname, "frontend/build")));
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
+});
 
 //Setting port variable and listening on port 5150
 const port = 5150;
